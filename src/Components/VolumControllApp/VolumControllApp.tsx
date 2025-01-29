@@ -230,7 +230,7 @@ const VolumControllApp: FC = (): JSX.Element => {
               }
             });
             if (bestDiff < 15 && bestMatch) {
-              setSpeakerStatus(`זוהה דובר: ${bestMatch.name}`);
+              setSpeakerStatus(`זוהה דובר: ${bestMatch['name']}`);
             } else {
               setSpeakerStatus('לא נמצא דובר ראשי');
             }
